@@ -22,6 +22,7 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  position: relative;
 }
 
 header h1 {
@@ -197,4 +198,95 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode section {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+body.dark-mode .activity-card {
+  background-color: #2a2a2a;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode .activity-card h4 {
+  color: #64b5f6;
+}
+
+body.dark-mode .participants-container {
+  border-top-color: #555;
+}
+
+body.dark-mode .participants-section h5 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group select {
+  background-color: #2a2a2a;
+  border-color: #555;
+  color: #e0e0e0;
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode button:hover {
+  background-color: #555;
+}
+
+body.dark-mode .message.success {
+  background-color: #1b5e20;
+  color: #a5d6a7;
+  border-color: #4caf50;
+}
+
+body.dark-mode .message.error {
+  background-color: #b71c1c;
+  color: #ef9a9a;
+  border-color: #f44336;
+}
+
+body.dark-mode .message.info {
+  background-color: #00695c;
+  color: #80cbc4;
+  border-color: #26a69a;
+}
+
+body.dark-mode footer {
+  color: #aaa;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+body.dark-mode #dark-mode-toggle {
+  border-color: #e0e0e0;
+  color: #e0e0e0;
 }
